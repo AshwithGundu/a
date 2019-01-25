@@ -1,0 +1,70 @@
+.dim {
+    /* height: 50px; */
+    width: 25%;
+    margin-bottom: -50px;
+    /* margin: auto; */
+}
+
+#sign {
+    height: 150px;
+    /* text-align: center; */
+}
+
+.sg{
+    /* height: 10%; */
+    margin-left: 100px;
+}
+@media only screen and (max-width: 768px) {
+.sg {
+    /* height: 10%; */
+    margin-left: -100px;
+}
+}
+.datee {
+    margin-top: -20px;
+}
+
+path {
+    fill: none;
+    stroke: rgb(253, 253, 253);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.line1 {
+    stroke-dasharray: 10000;
+    /*   stroke-dashoffset: 1000; */
+    animation: w1 15s linear;
+}
+
+@keyframes w1 {
+    from {
+        stroke-dashoffset: 10000;
+    }
+
+    to {
+        stroke-dashoffset: 5000;
+    }
+}
+
+.line2 {
+    stroke-dasharray: 4000;
+    /*   stroke-dashoffset: 1000; */
+    animation: w2 7s linear reverse;
+}
+
+@keyframes w2 {
+    from {
+        stroke-dashoffset: 2000;
+    }
+
+    to {
+        stroke-dashoffset: 5800;
+    }
+}
+
+.sign {
+    padding-top: 10px;
+}
